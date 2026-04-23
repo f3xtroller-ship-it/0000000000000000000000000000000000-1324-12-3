@@ -1,0 +1,887 @@
+local AuraIS = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-Y/main/Libraries/AuraIS/Main"))()
+
+local Library = AuraIS:CreateLibrary({
+    Name = "F3X Ruiner — Opensource Version", 
+    Icon = "rbxassetid://12974454446" 
+})
+
+local function getplayer(name,speaker)
+	local list = {}
+
+	if name == "" or name == nil or name == " " then
+		return speaker
+	end
+	for _,player in game.Players:GetPlayers() do
+		if string.match(string.lower(player.Name),"^"..string.lower(name)) then
+			table.insert(list,player)
+		end
+	end
+
+
+	return list
+end
+
+
+local TabDemo = Library:CreateTab("Trolling", "rbxassetid://12974454446")
+
+local SectionDemo = TabDemo:CreateSection("Section 1", "Normal") -- Normal
+
+local CardDemo = SectionDemo:CreateCard({
+	Title = "Person who made the script",
+	Description = "THIS is the real scriptmaker. Nobody else",
+	SecondaryTitle = "The real scriptmaker!",
+	Image = "rbxassetid://134802772155496",
+	Buttons = {
+        Button1 = {
+			Name = "Copy Roblox User",
+			Callback = function()
+            setclipboard("missy_bissylissy")
+		    AuraIS:Notify("Warning" , { 
+			Title = "Script:",
+			Content = "User has been copied.",
+			Duration = 5,
+			Image = "rbxassetid://4483362458",
+			Actions = {
+			   Ignore = {
+				  Name = "OKAY...",
+				  Callback = function()
+
+			    end
+			},
+		    },
+		    })
+			end
+		},
+		Button2 = {
+			Name = "Copy Discord",
+			Callback = function()
+            setclipboard("@missy_bissylissy")
+		    AuraIS:Notify("Warning" , { 
+			Title = "Script:",
+			Content = "Discord has been copied.",
+			Duration = 5,
+			Image = "rbxassetid://4483362458",
+			Actions = {
+			   Ignore = {
+				  Name = "OKAY...",
+				  Callback = function()
+
+			   end
+			},
+		    },
+		    })
+			end
+		}
+	}
+})
+
+local CardDemo = SectionDemo:CreateCard({
+	Title = "VERY HELPFUL PERSON",
+	Description = "tysm brooo",
+	SecondaryTitle = "helped me advertise the script",
+	Image = "rbxassetid://86082920533373",
+	Buttons = {
+        Button1 = {
+			Name = "Copy Roblox User",
+			Callback = function()
+            setclipboard("Rip_lucknothing")
+		    AuraIS:Notify("Warning" , { 
+			Title = "Script:",
+			Content = "User has been copied.",
+			Duration = 5,
+			Image = "rbxassetid://4483362458",
+			Actions = {
+			   Ignore = {
+				  Name = "OKAY...",
+				  Callback = function()
+
+			    end
+			    },
+		    },
+		    })
+			end
+		},
+		Button2 = {
+			Name = "Copy Discord",
+			Callback = function()
+            setclipboard("@chainster90")
+		    AuraIS:Notify("Warning" , { 
+			Title = "Script:",
+			Content = "Discord has been copied. (HIS YT IS HYPERFIX GO SUPPORT HIM!)",
+			Duration = 5,
+			Image = "rbxassetid://4483362458",
+			Actions = {
+			   Ignore = {
+				  Name = "OKAY...",
+				  Callback = function()
+
+			   end
+			},
+		    },
+		    })
+			end
+		}
+	}
+})
+
+local CardDemo = SectionDemo:CreateCard({
+	Title = "Keyboard script for mobile",
+	Description = "Some of you are mobile, i know.",
+	SecondaryTitle = "Execute to access features!",
+	Image = "rbxassetid://12801466518",
+	Buttons = {
+		Button1 = {
+			Name = "Execute",
+			Callback = function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
+			end
+		},
+		Button2 = {
+			Name = "Credits",
+			Callback = function()
+		    AuraIS:Notify("Warning" , { 
+			Title = "credits",
+			Content = "uploader: SAKURA \n cracker: ATA",
+			Duration = 5,
+			Image = "rbxassetid://4483362458",
+			Actions = {
+			   Ignore = {
+				  Name = "OKAY...",
+				  Callback = function()
+
+			   end
+			},
+		    },
+		    })
+			end
+		}
+	}
+})
+
+local CardDemo = SectionDemo:CreateCard({
+	Title = "CHAINSAW",
+	Description = "FEATURES: \n  R: SLASH",
+	SecondaryTitle = "Equip F3X in order for it to work.",
+	Image = "rbxassetid://79834061850904",
+	Buttons = {
+		Button1 = {
+			Name = "Execute",
+			Callback = function()
+				loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/IIPoIWa14yVk8Fet/raw",true))()
+			end
+		},
+		Button2 = {
+			Name = "Credits",
+			Callback = function()
+		    AuraIS:Notify("Warning" , { 
+			Title = "credits",
+			Content = "Rip_lucknothing",
+			Duration = 5,
+			Image = "rbxassetid://4483362458",
+			Actions = {
+			   Ignore = {
+				  Name = "OKAY...",
+				  Callback = function()
+
+			   end
+			},
+		    },
+		    })
+			end
+		}
+	}
+})
+
+local CardDemo = SectionDemo:CreateCard({
+	Title = "AND his name is",
+	Description = "FEATURES: \n  R: PUNCH REAL HARD",
+	SecondaryTitle = "Equip F3X in order for it to work.",
+	Image = "rbxassetid://127505268200787",
+	Buttons = {
+		Button1 = {
+			Name = "Execute",
+			Callback = function()
+                loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/xFZ0ZJLXYxclgs71/raw",true))()
+			end
+		},
+		Button2 = {
+			Name = "Credits",
+			Callback = function()
+		    AuraIS:Notify("Warning" , { 
+			Title = "credits",
+			Content = "Rip_lucknothing: Idea",
+			Duration = 5,
+			Image = "rbxassetid://4483362458",
+			Actions = {
+			   Ignore = {
+				  Name = "OKAY...",
+				  Callback = function()
+
+			   end
+			},
+		    },
+		    })
+			end
+		}
+	}
+})
+
+local CardDemo = SectionDemo:CreateCard({
+	Title = "the glorius dick sword",
+	Description = "FEATURES: \n  R: DICK SHOVE \n E: SLASH",
+	SecondaryTitle = "Equip F3X in order for it to work.",
+	Image = "rbxassetid://80601901004539",
+	Buttons = {
+		Button1 = {
+			Name = "Execute",
+			Callback = function()
+				loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/fqSw26Rp69Pdax1b/raw",true))()
+			end
+		},
+		Button2 = {
+			Name = "Credits",
+			Callback = function()
+		    AuraIS:Notify("Warning" , { 
+			Title = "credits",
+			Content = "Rip_lucknothing: Idea \n ORIGINAL BACKDOOR SCRIPT: Grab knife v4 dildo",
+			Duration = 5,
+			Image = "rbxassetid://4483362458",
+			Actions = {
+			   Ignore = {
+				  Name = "OKAY...",
+				  Callback = function()
+
+			   end
+			},
+		    },
+		    })
+			end
+		}
+	}
+})
+
+local CardDemo = SectionDemo:CreateCard({
+	Title = "FE goner",
+	Description = "FEATURES: \n  R: SLASH",
+	SecondaryTitle = "Equip F3X in order for it to work.",
+	Image = "rbxassetid://87749061218027",
+	Buttons = {
+		Button1 = {
+			Name = "Execute",
+			Callback = function()
+				loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/90QG2RCzyL25UUpR/raw",true))()
+			end
+		},
+		Button2 = {
+			Name = "Original script (FOR SS)",
+			Callback = function()
+		    AuraIS:Notify("Warning" , { 
+			Title = "credits",
+			Content = "ORIGINAL BACKDOOR SCRIPT: GONER",
+			Duration = 5,
+			Image = "rbxassetid://4483362458",
+			Actions = {
+			   Ignore = {
+				  Name = "OKAY...",
+				  Callback = function()
+
+			   end
+			},
+		    },
+		    })
+			end
+		}
+	}
+})
+
+local CardDemo = SectionDemo:CreateCard({
+	Title = "CUFF",
+	Description = "FEATURES: \n  R: CUFF \n SIDE NOTE: there is no uncuff yet, idk why it doesnt work",
+	SecondaryTitle = "Equip F3X in order for it to work.",
+	Image = "rbxassetid://109633318851867",
+	Buttons = {
+		Button1 = {
+			Name = "Execute",
+			Callback = function()
+				loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/aO1BP3srvSZbKPrv/raw",true))()
+			end
+		},
+		Button2 = {
+			Name = "Credits",
+			Callback = function()
+		    AuraIS:Notify("Warning" , { 
+			Title = "credits",
+			Content = "Rip_lucknothing",
+			Duration = 5,
+			Image = "rbxassetid://109633318851867",
+			Actions = {
+			   Ignore = {
+				  Name = "OKAY...",
+				  Callback = function()
+
+			   end
+			},
+		    },
+		    })
+			end
+		}
+	}
+})
+
+local CardDemo = SectionDemo:CreateCard({
+	Title = "INFINITY GAUNTLET",
+	Description = "FEATURES: \n  R: HIT PEOPLE",
+	SecondaryTitle = "Equip F3X in order for it to work.",
+	Image = "rbxassetid://74297628106141",
+	Buttons = {
+		Button1 = {
+			Name = "Execute",
+			Callback = function()
+				loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/jkDROq5PGm1iNqVv/raw",true))()
+			end
+		},
+		Button2 = {
+			Name = "Credits",
+			Callback = function()
+		    AuraIS:Notify("Warning" , { 
+			Title = "credits",
+			Content = "nobody cuz i made ts myself",
+			Duration = 5,
+			Image = "rbxassetid://4483362458",
+			Actions = {
+			   Ignore = {
+				  Name = "OKAY...",
+				  Callback = function()
+
+			   end
+			},
+		    },
+		    })
+			end
+		}
+	}
+})
+
+local CardDemo = SectionDemo:CreateCard({
+	Title = "SLEDGEHAMMER",
+	Description = "FEATURES: \n  R: SMASH PEOPLE/ UNANCHOR ANYTHING",
+	SecondaryTitle = "Equip F3X in order for it to work.",
+	Image = "rbxassetid://71246933866469",
+	Buttons = {
+		Button1 = {
+			Name = "Execute",
+			Callback = function()
+				loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/yM2eZft193oKt7gc/raw",true))()
+			end
+		},
+		Button2 = {
+			Name = "Credits",
+			Callback = function()
+		    AuraIS:Notify("Warning" , { 
+			Title = "credits",
+			Content = "Rip_lucknothing: Animations and Idea",
+			Duration = 5,
+			Image = "rbxassetid://4483362458",
+			Actions = {
+			   Ignore = {
+				  Name = "OKAY...",
+				  Callback = function()
+
+			   end
+			},
+		    },
+		    })
+			end
+		}
+	}
+})
+
+local TextboxDemo = SectionDemo:CreateTextbox({
+	Name = "FE ASS SCRIPT (EQUIP F3X TO WORK)",
+	PlaceholderText = "player name",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(Text)
+local lp = game:GetService("Players").LocalPlayer
+
+local charlp = lp.Character
+
+local server = charlp:FindFirstChildOfClass("Tool"):WaitForChild("SyncAPI"):WaitForChild("ServerEndpoint")
+local handle = charlp:FindFirstChildOfClass("Tool").Handle
+
+local function createball(CFram,parent)
+	local args = {
+		"CreatePart",
+		"Ball",
+		CFram,
+		parent
+	}
+	local part = server:InvokeServer(unpack(args))
+	return part
+end
+
+
+local function color(inst,color)
+    local args = {
+	"SyncColor",
+	{
+		{
+			Color = color,
+			UnionColoring = true,
+			Part =inst
+		}
+	}
+}
+server:InvokeServer(unpack(args))
+end
+
+
+local function anchor(bool,inst)
+	local args = {
+		"SyncAnchor",
+		{
+			{
+				Part=inst,
+				Anchored = bool
+			}
+		}
+	}
+	server:InvokeServer(unpack(args))
+end
+
+local function move(inst,CFram)
+	local args = {
+		"SyncMove",
+		{
+			{
+				Part = inst,
+				CFrame = CFram
+			}
+		}
+	}
+	server:InvokeServer(unpack(args))
+end
+
+local function resize(inst,size)
+	local args = {
+		"SyncResize",
+		{
+			{
+				Part = inst,
+				CFrame = inst.CFrame,
+				Size = size
+			}
+		}
+	}
+	server:InvokeServer(unpack(args))
+end
+
+local function collision(inst,bool)
+local args = {
+	"SyncCollision",
+	{
+		{
+			Part = inst,
+			CanCollide = bool
+		}
+	}
+}
+server:InvokeServer(unpack(args))
+
+end
+
+local target = Text
+
+local char = getplayer(target)[1].Character
+local fakeTorso = char:WaitForChild("Torso")
+local torso = char:WaitForChild("Torso")
+
+local lfake = createball(torso.CFrame,workspace)
+local rfake = createball(torso.CFrame,workspace)
+anchor(true,lfake)
+anchor(true,rfake)
+resize(lfake,Vector3.new(1.5,1.5,1.5))
+resize(rfake,Vector3.new(1.5,1.5,1.5))
+collision(rfake,false)
+collision(lfake,false)
+color(rfake,char["Right Leg"].Color)
+color(lfake,char["Left Leg"].Color)
+
+local lfakeRel = CFrame.new(0.5, -1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+local rfakeRel = CFrame.new(-0.5, -1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+
+local function rebaseRelativeCFrame(relativeCFrame, newBaseCFrame)
+	return newBaseCFrame * relativeCFrame
+end
+
+
+
+while task.wait() do
+	if not char or not char.Parent then return end
+
+
+	local currentTorso = char:FindFirstChild("Torso")
+	if not currentTorso then return end
+
+	move(lfake, rebaseRelativeCFrame(lfakeRel, currentTorso.CFrame))
+	move(rfake, rebaseRelativeCFrame(rfakeRel, currentTorso.CFrame))
+end
+
+	end,
+ })
+
+local TextboxDemo = SectionDemo:CreateTextbox({
+	Name = "Humiliate (EQUIP F3X TO WORK)",
+	PlaceholderText = "player name",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(Text)
+local RunService = game:GetService("RunService")
+
+local function getplayer(name,speaker)
+	local list = {}
+
+	if name == "" or name == nil or name == " " then
+		return speaker
+	end
+	for _,player in game.Players:GetPlayers() do
+		if string.match(string.lower(player.Name),"^"..string.lower(name)) then
+			table.insert(list,player)
+		end
+	end
+
+
+	return list
+end
+
+local function gs(str,begin,boolean)
+	local things = {}
+	
+	for i=begin,#str do
+		if boolean == true then
+		table.insert(things,str[i].." ")
+		else
+		table.insert(things,str[i])
+		end
+	end
+	return table.concat(things)
+end
+
+local lp = game:GetService("Players").LocalPlayer
+
+local charlp = lp.Character
+
+local server = charlp:FindFirstChildOfClass("Tool"):WaitForChild("SyncAPI"):WaitForChild("ServerEndpoint")
+local handle = charlp:FindFirstChildOfClass("Tool").Handle
+
+local function createpart(CFram,parent)
+	local args = {
+		"CreatePart",
+		"Normal",
+		CFram,
+		parent
+	}
+	local part = server:InvokeServer(unpack(args))
+	return part
+end
+
+local function createseat(CFram,parent)
+	local args = {
+		"CreatePart",
+		"Seat",
+		CFram,
+		parent
+	}
+	local part = server:InvokeServer(unpack(args))
+	return part
+end
+
+local function createball(CFram,parent)
+	local args = {
+		"CreatePart",
+		"Ball",
+		CFram,
+		parent
+	}
+	local part = server:InvokeServer(unpack(args))
+	return part
+end
+
+local function createfolder(contents,parent)
+	local args = {
+		"CreateGroup",
+		"Folder",
+		parent,
+		contents
+	}
+	return server:InvokeServer(unpack(args))
+end
+
+local function mesh(inst,id,textureid,size,offset,tint)
+local args = {
+	"CreateMeshes",
+	{
+		{
+			Part = inst
+		}
+	}
+}
+server:InvokeServer(unpack(args))
+local args = {
+	"SyncMesh",
+	{
+		{
+			MeshType = Enum.MeshType.FileMesh,
+			Part = inst
+		}
+	}
+}
+server:InvokeServer(unpack(args))
+local args = {
+	"SyncMesh",
+	{
+		{
+			Part = inst,
+			MeshId = "rbxassetid://"..id,
+			Scale = size,
+			Offset = offset,
+			VertexColor = color,
+			TextureId = "rbxassetid://"..textureid
+		}
+	}
+}
+server:InvokeServer(unpack(args))
+
+end
+
+local function rename(inst,str)
+	local args = {
+		"SetName",
+		{
+			inst
+		},
+		str
+	}
+	server:InvokeServer(unpack(args))
+end
+
+local function removedecals(inst)
+for i,v in inst:GetDescendants() do
+if v:IsA("Decal") then
+local args = {
+	"Remove",
+	{
+		v
+	}
+}
+server:InvokeServer(unpack(args))
+end
+end
+end
+
+local function color(inst,color)
+    local args = {
+	"SyncColor",
+	{
+		{
+			Color = color,
+			UnionColoring = true,
+			Part =inst
+		}
+	}
+}
+server:InvokeServer(unpack(args))
+end
+
+local function weld(at0,at1,bool)
+	if bool == true then
+		local args = {
+			"CreateWelds",
+			{
+				at0,
+				at1
+			},
+			at0
+		}
+		server:InvokeServer(unpack(args))
+	else
+		local list = {}
+		for i,v in at0:GetDescendants() do
+			if string.match(v.Name,"Weld") then
+				table.insert(list,v)
+			end
+		end
+		for i,v in at1:GetDescendants() do
+			if string.match(v.Name,"Weld") then
+				table.insert(list,v)
+			end
+		end
+		local args = {
+			"RemoveWelds",
+			list
+		}
+		server:InvokeServer(unpack(args))
+	end
+end
+
+local function Refmaterial(value,inst)
+	local args = {
+		"SyncMaterial",
+		{
+			{
+				Part=inst,
+				Reflectance = value
+			}
+		}
+	}
+	server:InvokeServer(unpack(args))
+end
+
+local function TransMaterial(value,inst)
+	local args = {
+		"SyncMaterial",
+		{
+			{
+				Part=inst,
+				Transparency = value
+			}
+		}
+	}
+	server:InvokeServer(unpack(args))
+end
+
+local function anchor(bool,inst)
+	local args = {
+		"SyncAnchor",
+		{
+			{
+				Part=inst,
+				Anchored = bool
+			}
+		}
+	}
+	server:InvokeServer(unpack(args))
+end
+
+local function unweld(inst)
+	local args = {
+		"SyncMove",
+		{
+			{
+				Part = inst,
+				CFrame = inst.CFrame
+			}
+		}
+	}
+	server:InvokeServer(unpack(args))
+end
+
+local function move(inst,CFram)
+	local args = {
+		"SyncMove",
+		{
+			{
+				Part = inst,
+				CFrame = CFram
+			}
+		}
+	}
+	server:InvokeServer(unpack(args))
+end
+
+local function delete(inst)
+	local args = {
+		"Remove",
+		{
+			inst
+		}
+	}
+	server:InvokeServer(unpack(args))
+end
+
+local function resize(inst,size)
+	local args = {
+		"SyncResize",
+		{
+			{
+				Part = inst,
+				CFrame = inst.CFrame,
+				Size = size
+			}
+		}
+	}
+	server:InvokeServer(unpack(args))
+end
+
+local function collision(inst,bool)
+local args = {
+	"SyncCollision",
+	{
+		{
+			Part = inst,
+			CanCollide = bool
+		}
+	}
+}
+server:InvokeServer(unpack(args))
+
+end
+
+local target = Text
+
+local char = getplayer(target)[1].Character
+local fakeTorso = char:WaitForChild("Torso")
+local torso = char:WaitForChild("Torso")
+
+local lfake = createpart(torso.CFrame,workspace)
+local rfake = createpart(torso.CFrame,workspace)
+local mfake = createpart(torso.CFrame,workspace)
+local tfake = createpart(torso.CFrame,workspace)
+local pfake = createseat(torso.CFrame,workspace)
+anchor(true,lfake)
+anchor(true,rfake)
+resize(lfake,Vector3.new(0.75, 0.75, 0.75))
+resize(rfake,Vector3.new(0.5, 0.75, 1.25))
+collision(rfake,false)
+collision(lfake,false)
+color(rfake,char["Right Leg"].Color)
+color(lfake,char["Left Leg"].Color)
+color(mfake,char["Left Leg"].Color)
+collision(mfake,false)
+anchor(true,mfake)
+resize(mfake,Vector3.new(0.75,0.75,0.75))
+collision(tfake,false)
+anchor(true,tfake)
+resize(tfake,Vector3.new(0.5, 0.75, 0.5))
+color(tfake,Color3.new(1, 0.0313725, 1))
+collision(pfake,false)
+anchor(true,pfake)
+resize(pfake,Vector3.new(0.5, 0.75, 0.5))
+color(pfake,Color3.new(1, 0.0313725, 1))
+local lfakeRel = CFrame.new(0.625, -0.625, -0.875, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+local rfakeRel = CFrame.new(0, -0.625, -1.875, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+local mfakeRel = CFrame.new(-0.625, -0.625, -0.875, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+local tfakeRel = CFrame.new(0, -0.625, -2.75, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+local pfakeRel = CFrame.new(0, -0.625, -2.75, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+
+local function rebaseRelativeCFrame(relativeCFrame, newBaseCFrame)
+	return newBaseCFrame * relativeCFrame
+end
+
+
+
+while task.wait() do
+	if not char or not char.Parent then return end
+
+
+	local currentTorso = char:FindFirstChild("Torso")
+	if not currentTorso then return end
+
+	move(lfake, rebaseRelativeCFrame(lfakeRel, currentTorso.CFrame))
+	move(rfake, rebaseRelativeCFrame(rfakeRel, currentTorso.CFrame))
+	move(mfake, rebaseRelativeCFrame(mfakeRel, currentTorso.CFrame))
+	move(tfake, rebaseRelativeCFrame(tfakeRel, currentTorso.CFrame))
+	move(pfake, rebaseRelativeCFrame(pfakeRel, currentTorso.CFrame))
+end
+
+	end,
+ })
